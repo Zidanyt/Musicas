@@ -19,7 +19,7 @@ const img_right = document.getElementById('img_right')
 const onePiece = {
     nomeMusica : 'We are!',
     NomeReferencia : 'One Piece',
-    file : 'OnePiece',
+    file : 'Onepiece',
     file__musica : 'OnePiece',
     img_left : 'Onepiece',
     img_right : 'Onepiece',
