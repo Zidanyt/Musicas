@@ -16,14 +16,14 @@ const img_right = document.getElementById('img_right')
 
 // objeto js
 // \' escapa, deixar passa
-// const onePiece = {
-//     nomeMusica : 'We are!',
-//     NomeReferencia : 'One Piece',
-//     file : 'Onepiece',
-//     file__musica : 'Onepiece',
-//     img_left : 'Onepiece',
-//     img_right : 'Onepiece',
-// };
+const onePiece = {
+    nomeMusica : 'We are!',
+    NomeReferencia : 'One Piece',
+    file : 'Onepiece',
+    file__musica : 'Onepiece',
+    img_left : 'Onepiece',
+    img_right : 'Onepiece',
+};
 const fullmetalAlchemistBrotherhood = {
     nomeMusica : ' Again',
     NomeReferencia : 'Fullmetal Alchemist: Brotherhood',
@@ -121,7 +121,7 @@ const Gorillaz12DAUDIO   = {
     img_right : 'pokemon',
 };
 let isPlaying = false;
-const originalPlaylist = [fullmetalAlchemistBrotherhood, pokemon, GorillazClintEastwood, GorillazTranz, GorillazFeelGood, GorillazSaturnzBarzSpiritHouse, GorillazOnMelancholyHill, GorillazHollywoodfeatSnoopDoggJamiePrinciple, GorillazDARE, GorillazDirtyHarry, Gorillaz192000, Gorillaz12DAUDIO];
+const originalPlaylist = [onePiece, fullmetalAlchemistBrotherhood, pokemon, GorillazClintEastwood, GorillazTranz, GorillazFeelGood, GorillazSaturnzBarzSpiritHouse, GorillazOnMelancholyHill, GorillazHollywoodfeatSnoopDoggJamiePrinciple, GorillazDARE, GorillazDirtyHarry, Gorillaz192000, Gorillaz12DAUDIO];
 let index = 0;
 
 function tocaMusica() {
