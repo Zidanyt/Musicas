@@ -54,10 +54,8 @@ button {
 }
 
 .icones__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .icones {
@@ -72,6 +70,10 @@ button {
 .icones__garnde {
     font-size: 3.5rem;
     cursor: pointer;
+}
+
+#shuffle {
+    font-size: 2rem;
 }
 
 .nome__musica_ {
