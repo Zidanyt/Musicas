@@ -9,6 +9,7 @@ const barra__progresso = document.getElementById('barra__current')
 const container__barradeprogersoo = document.getElementById('container__barradeprogersoo')
 const inicioMusica = document.getElementById('inicio__musica')
 const totalMusica = document.getElementById('total__musica')
+const shuffleButton = document.getElementById('shuffle');
 
 
 const img_left = document.getElementById('img_left')
@@ -216,7 +217,28 @@ function TempoMusicaTotal() {
     totalMusica.innerText = toHHMMSS(musica.duration);
 }
 
+function shufflePlaylist() {
+    originalPlaylist = shuffleArray(originalPlaylist);
+    
+    index = 0;
+
+    iniciarMusica();
+    tocaMusica();
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    // iniciarMusica();
+    // tocaMusica();
+    return array;
+    
+}
+
 // execulta
+
 iniciarMusica();
 
 playMusica.addEventListener('click', playPause);
@@ -227,6 +249,7 @@ musica.addEventListener('timeupdate', barraDeProgresso)
 musica.addEventListener('loadedmetadata', TempoMusicaTotal)
 container__barradeprogersoo.addEventListener('click', jumpTo)
 musica.addEventListener('ended', tocaProximaMusica);
+shuffleButton.addEventListener('click', shufflePlaylist);
 
 // PlayMusica.addEventListener('Eventos', oq vou fazer);
 
